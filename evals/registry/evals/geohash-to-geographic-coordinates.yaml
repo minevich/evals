@@ -1,0 +1,8 @@
+geohash-to-geographic-coordinates:
+  id: geohash-to-geographic-coordinates.dev.v0
+  description: Tests the models ability to convert a geohash into geographic coordinates.
+  metrics: [accuracy]
+geohash-to-geographic-coordinates.dev.v0:
+  class: evals.elsuite.basic.match:Match
+  args:
+    samples_jsonl: geohash_to_coordinates/samples.jsonl
